@@ -1,0 +1,111 @@
+.footerSection{
+    background-color: $black;
+    & .MainSide{
+        & .footerLogo{
+            height: 80px;
+            width: 100px;
+            @include sm{
+                height: 90px;
+                width: 130px;
+            }
+            @include lg{
+                height: 100px;
+                width: 150px;
+            }
+        }
+        & .footertxt{
+            color: $white;
+            opacity: 0.6;
+        }
+        & .socialLinks{
+            padding-top: 25px;
+            & .socialUl{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                & .socialAnc{
+                    & .socialImg{
+                        border: 1px solid $white;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 35px;
+                        width: 35px;
+                        padding: 10px;
+                        transition: all .3s ease-in-out;
+                        @include sm{
+                            height: 40px;
+                            width: 40px;
+                        }
+                        @include lg{
+                            height: 45px;
+                            width: 45px;
+                        }
+                    }
+                    & .faceBook{
+                        transition: all .3s ease-in-out;
+                    }
+                    & .instagram{
+                        transition: all .3s ease-in-out;
+                    }
+                    & .linkedIn{
+                        transition: all .3s ease-in-out;
+                    }
+                    & .twitter{
+                        transition: all .3s ease-in-out;
+                    }
+                    &:hover{
+                        & .socialImg{
+                            border: transparent;
+                        }
+                        & .faceBook{
+                            background-color: #3b5998;
+                        }
+                        & .instagram{
+                            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+                        }
+                        & .linkedIn{
+                            background-color: #0072b1;
+                        }
+                        & .twitter{
+                            background-color: #00acee;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .secondLine{
+        margin-top: 15px;
+        @include md{
+            margin-top: 20px;
+        }
+        @include lg{
+            margin-top: 30px;
+        }
+        & .MianHead{
+            font-size: 20px;
+            color: $white;
+            font-weight: 700;
+            margin-bottom: 30px;
+            @include md{
+                margin-bottom: 40px;
+            }
+            @include lg{
+                margin-bottom: 50px;
+            }
+        }
+        & .secondLinks{
+            & .secondAnc{
+                color: $white;
+                opacity: 0.6;
+                font-weight: 500;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

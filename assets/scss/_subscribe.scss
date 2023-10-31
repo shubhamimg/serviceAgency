@@ -1,0 +1,47 @@
+.subscribeSection{
+    & .subscon{
+        padding: 20px;
+        border-radius: 15px;
+        @include sm{
+            padding: 30px;
+        }
+        @include md{
+            padding: 40px;
+        }
+        & .textSide{
+            & .inputbutton{
+                & .subsBtn{
+                    transition: all .3s ease-in-out;
+                    &:hover{
+                        transform: scale(0.9);
+                        background-color: $theme1 !important;
+                        color: $black !important;
+                        font-weight: 700;
+                    }
+                }
+            }
+            & .member{
+                opacity: 1;
+                & .spanYellow{
+                    color: $theme1;
+                }
+            }
+        }
+        & .imgSide{
+            & .chartImg{
+                aspect-ratio: 3/2;
+                padding: 0;
+                overflow: hidden;
+                border-radius: 8px;
+                margin-right: -25px;
+                position: sticky;
+                z-index: 10;
+            }
+            & .subsImg{
+                aspect-ratio: 3/2.5;
+                overflow: hidden;
+                border-radius: 15px;
+            }
+        }
+    }
+}

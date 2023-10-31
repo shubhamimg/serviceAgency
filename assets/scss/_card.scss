@@ -1,0 +1,79 @@
+.cardSection{
+    & .mainCardDiv{
+        & .mainCard{
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding:  20px;
+            transition: all .3s ease-in-out;
+            & .cardIcon{
+                height: 50px;
+                width: 50px;
+                background-color: $black;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                transition: all .3s ease-in-out;
+                & img{
+                    filter: invert(1);
+                    transition: all .3s ease-in-out;
+                }
+            }
+            & .CardHeading{
+                font-size: 18px;
+                font-weight: 600;
+                color: $black;
+                padding-block: 20px;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                transition: all .3s ease-in-out;
+            }
+            & .cardText{
+                line-height: 120%;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                transition: all .3s ease-in-out;
+            }
+            &.active{
+                background-color: $black;
+                & .cardIcon{
+                    background-color: $white;
+                    & img{
+                        filter: none;
+                    }
+                }
+                & .CardHeading{
+                    color: $white;
+                }
+                & .cardText{
+                    color: $white;
+                }
+            }
+            &:hover{
+                background-color: $black;
+                & .cardIcon{
+                    background-color: $white;
+                    & img{
+                        filter: none;
+                    }
+                }
+                & .CardHeading{
+                    color: $white;
+                }
+                & .cardText{
+                    color: $white;
+                }
+            }
+        }
+    }
+    & .upper{
+        margin-top: 22px;
+    }
+}
